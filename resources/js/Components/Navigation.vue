@@ -50,16 +50,18 @@
                         <!-- Dropdown Menu -->
                         <div
                             class="absolute right-0 mt-0 w-32 bg-gray-800 border border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                            <a :href="route('language.switch', 'en')"
+                            <Link :href="route('language.switch', 'en')"
+                                preserve-scroll
                                 class="block px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-gray-700 first:rounded-t-lg transition-colors text-sm font-medium"
                                 :class="{ 'bg-blue-500/20 text-blue-400': locale() === 'en' }">
                                 🇬🇧 English
-                            </a>
-                            <a :href="route('language.switch', 'vi')"
+                            </Link>
+                            <Link :href="route('language.switch', 'vi')"
+                                preserve-scroll
                                 class="block px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-gray-700 last:rounded-b-lg transition-colors text-sm font-medium"
                                 :class="{ 'bg-blue-500/20 text-blue-400': locale() === 'vi' }">
                                 🇻🇳 Tiếng Việt
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -105,16 +107,18 @@
                 </a>
                 <!-- Mobile Language Selector -->
                 <div class="border-t border-gray-700 pt-2 mt-2 space-y-1">
-                    <a :href="route('language.switch', 'en')"
+                    <Link :href="route('language.switch', 'en')"
+                        preserve-scroll
                         class="block px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-gray-800 rounded-lg transition-colors text-sm"
                         :class="{ 'bg-blue-500/20 text-blue-400': locale() === 'en' }">
                         🇬🇧 English
-                    </a>
-                    <a :href="route('language.switch', 'vi')"
+                    </Link>
+                    <Link :href="route('language.switch', 'vi')"
+                        preserve-scroll
                         class="block px-4 py-2 text-gray-300 hover:text-blue-400 hover:bg-gray-800 rounded-lg transition-colors text-sm"
                         :class="{ 'bg-blue-500/20 text-blue-400': locale() === 'vi' }">
                         🇻🇳 Tiếng Việt
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -123,6 +127,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { Link } from '@inertiajs/vue3'
 import { useTranslation } from '@/Composables/useTranslation'
 import { route } from 'ziggy-js'
 
