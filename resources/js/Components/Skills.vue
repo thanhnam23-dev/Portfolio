@@ -16,7 +16,7 @@
                 <div
                     class="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/50 rounded-xl p-8 hover:border-blue-500/50 transition-all">
                     <h3 class="text-2xl font-bold text-blue-400 mb-6 flex items-center gap-2">
-                        <span class="text-3xl">⚙️</span> {{ t('skills_backend') }}
+                        {{ t('skills_backend') }}
                     </h3>
                     <div class="space-y-4">
                         <SkillBar :skill="t('skills_php')" percentage="95" />
@@ -31,7 +31,7 @@
                 <div
                     class="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/50 rounded-xl p-8 hover:border-cyan-500/50 transition-all">
                     <h3 class="text-2xl font-bold text-cyan-400 mb-6 flex items-center gap-2">
-                        <span class="text-3xl">🎨</span> {{ t('skills_frontend') }}
+                        {{ t('skills_frontend') }}
                     </h3>
                     <div class="space-y-4">
                         <SkillBar :skill="t('skills_vuejs')" percentage="90" />
@@ -46,7 +46,7 @@
                 <div
                     class="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/50 rounded-xl p-8 hover:border-purple-500/50 transition-all">
                     <h3 class="text-2xl font-bold text-purple-400 mb-6 flex items-center gap-2">
-                        <span class="text-3xl">💾</span> {{ t('skills_database') }}
+                        {{ t('skills_database') }}
                     </h3>
                     <div class="space-y-4">
                         <SkillBar skill="MySQL" percentage="90" />
@@ -60,7 +60,7 @@
                 <div
                     class="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/50 rounded-xl p-8 hover:border-green-500/50 transition-all">
                     <h3 class="text-2xl font-bold text-green-400 mb-6 flex items-center gap-2">
-                        <span class="text-3xl">🔤</span> {{ t('skills_languages') }}
+                        {{ t('skills_languages') }}
                     </h3>
                     <div class="space-y-4">
                         <SkillBar skill="PHP" percentage="95" />
@@ -77,7 +77,7 @@
                 <!-- Architecture Patterns -->
                 <div class="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/50 rounded-xl p-6">
                     <h4 class="text-lg font-semibold text-blue-400 mb-4 flex items-center gap-2">
-                        <span>🏗️</span> {{ t('skills_architecture') }}
+                        {{ t('skills_architecture') }}
                     </h4>
                     <div class="flex flex-wrap gap-2">
                         <span v-for="arch in architectures" :key="arch"
@@ -90,7 +90,7 @@
                 <!-- Payment Integration -->
                 <div class="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/50 rounded-xl p-6">
                     <h4 class="text-lg font-semibold text-purple-400 mb-4 flex items-center gap-2">
-                        <span>💳</span> {{ t('skills_payment') }}
+                        {{ t('skills_payment') }}
                     </h4>
                     <div class="flex flex-wrap gap-2">
                         <span v-for="payment in payments" :key="payment"
