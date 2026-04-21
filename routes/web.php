@@ -4,6 +4,15 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+// Language switching route
+Route::get('/language/{locale}', function ($locale) {
+    if (!in_array($locale, ['en', 'vi'])) {
+        $locale = 'en';
+    }
+    session(['locale' => $locale]);
+    return redirect()->back();
+})->name('language.switch');
+
 Route::get('/', function () {
     return Inertia::render('Portfolio');
 })->name('portfolio');
