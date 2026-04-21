@@ -4,9 +4,9 @@
       <!-- Section Title -->
       <div class="text-center mb-16">
         <h2 class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
-          Get In Touch
+          {{ t('contact_title') }}
         </h2>
-        <p class="text-gray-400 text-lg">Let's connect and collaborate</p>
+        <p class="text-gray-400 text-lg">{{ t('contact_subtitle') }}</p>
       </div>
 
       <!-- Contact Grid -->
@@ -19,9 +19,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Email</h3>
+          <h3 class="text-xl font-bold text-white mb-2">{{ t('contact_email') }}</h3>
           <p class="text-gray-300">namkim102@gmail.com</p>
-          <p class="text-sm text-gray-400 mt-2">I'll respond within 24 hours</p>
+          <p class="text-sm text-gray-400 mt-2">{{ t('contact_email_desc') }}</p>
         </a>
 
         <!-- Phone Contact -->
@@ -32,9 +32,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Phone</h3>
+          <h3 class="text-xl font-bold text-white mb-2">{{ t('contact_phone') }}</h3>
           <p class="text-gray-300">0969446782</p>
-          <p class="text-sm text-gray-400 mt-2">Available for quick calls</p>
+          <p class="text-sm text-gray-400 mt-2">{{ t('contact_phone_desc') }}</p>
         </a>
 
         <!-- Location -->
@@ -45,9 +45,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Location</h3>
+          <h3 class="text-xl font-bold text-white mb-2">{{ t('contact_location') }}</h3>
           <p class="text-gray-300">34 Dong Ngac, Hanoi</p>
-          <p class="text-sm text-gray-400 mt-2">Based in Vietnam</p>
+          <p class="text-sm text-gray-400 mt-2">{{ t('contact_location_desc') }}</p>
         </a>
 
         <!-- GitHub -->
@@ -58,21 +58,21 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">GitHub</h3>
+          <h3 class="text-xl font-bold text-white mb-2">{{ t('contact_github') }}</h3>
           <p class="text-gray-300">@thanhnam23-dev</p>
-          <p class="text-sm text-gray-400 mt-2">View my projects and contributions</p>
+          <p class="text-sm text-gray-400 mt-2">{{ t('contact_github_desc') }}</p>
         </a>
       </div>
 
       <!-- Quick Message Section -->
       <div class="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/50 rounded-xl p-8">
-        <h3 class="text-2xl font-bold text-white mb-6">Send Me a Message</h3>
+        <h3 class="text-2xl font-bold text-white mb-6">{{ t('contact_form_title') }}</h3>
         <form @submit.prevent="submitForm" class="space-y-4">
           <div>
             <input 
               v-model="form.name"
               type="text"
-              placeholder="Your Name"
+              :placeholder="t('contact_form_name')"
               class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none transition-colors"
             />
           </div>
@@ -80,14 +80,14 @@
             <input 
               v-model="form.email"
               type="email"
-              placeholder="Your Email"
+              :placeholder="t('contact_form_email')"
               class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none transition-colors"
             />
           </div>
           <div>
             <textarea 
               v-model="form.message"
-              placeholder="Your Message"
+              :placeholder="t('contact_form_message')"
               rows="5"
               class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none transition-colors resize-none"
             ></textarea>
@@ -100,14 +100,14 @@
             :disabled="isSubmitting"
             class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+            {{ isSubmitting ? t('contact_form_sending') : t('contact_form_send') }}
           </button>
         </form>
       </div>
 
       <!-- Social Links -->
       <div class="mt-12 text-center">
-        <p class="text-gray-400 mb-6">Or connect with me on social media</p>
+        <p class="text-gray-400 mb-6">{{ t('contact_social') }}</p>
         <div class="flex justify-center gap-4">
           <a href="https://github.com/thanhnam23-dev" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gray-800 border border-gray-700 rounded-full flex items-center justify-center text-gray-300 hover:bg-gray-700 hover:border-gray-600 transition-all">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -127,6 +127,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useTranslation } from '@/Composables/useTranslation'
+
+const { t } = useTranslation()
 
 const form = ref({
   name: '',
@@ -139,7 +142,7 @@ const formMessage = ref(null)
 
 const submitForm = async () => {
   if (!form.value.name || !form.value.email || !form.value.message) {
-    formMessage.value = { type: 'error', text: 'Please fill in all fields' }
+    formMessage.value = { type: 'error', text: t('contact_form_required') }
     return
   }
 
@@ -147,14 +150,14 @@ const submitForm = async () => {
   try {
     // In a real application, you would send this to your backend
     // For now, we'll just show a success message
-    formMessage.value = { type: 'success', text: 'Message sent successfully! I\'ll get back to you soon.' }
+    formMessage.value = { type: 'success', text: t('contact_form_success') }
     form.value = { name: '', email: '', message: '' }
     
     setTimeout(() => {
       formMessage.value = null
     }, 5000)
   } catch (error) {
-    formMessage.value = { type: 'error', text: 'Error sending message. Please try again.' }
+    formMessage.value = { type: 'error', text: t('contact_form_error') }
   } finally {
     isSubmitting.value = false
   }
