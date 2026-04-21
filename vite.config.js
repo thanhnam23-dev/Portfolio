@@ -17,4 +17,21 @@ export default defineConfig({
             },
         }),
     ],
+    build: {
+        rollupOptions: {
+            output: {
+                // Performance: Splitting vendor libraries into a separate chunk
+                manualChunks(id) {
+                    if (id.includes('node_modules')) {
+                        return 'vendor';
+                    }
+                },
+            },
+        },
+        // Optimization: Reduce chunk size warnings limit
+        chunkSizeWarningLimit: 1000,
+        // Optimization: Minification and CSS splitting
+        minify: 'terser',
+        cssCodeSplit: true,
+    },
 });

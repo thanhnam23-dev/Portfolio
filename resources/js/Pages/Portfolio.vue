@@ -11,13 +11,11 @@
       <!-- About Section -->
       <About />
 
-      <!-- Skills Section -->
+      <!-- Below the fold sections - Loaded Asynchronously for Performance -->
       <Skills />
 
-      <!-- Projects Section -->
       <Projects />
 
-      <!-- Contact Section -->
       <Contact />
     </main>
 
@@ -27,13 +25,16 @@
 </template>
 
 <script setup>
+import { defineAsyncComponent } from 'vue'
 import Navigation from '@/Components/Navigation.vue'
 import Hero from '@/Components/Hero.vue'
 import About from '@/Components/About.vue'
-import Skills from '@/Components/Skills.vue'
-import Projects from '@/Components/Projects.vue'
-import Contact from '@/Components/Contact.vue'
 import Footer from '@/Components/Footer.vue'
+
+// Async Loading for components below the fold
+const Skills = defineAsyncComponent(() => import('@/Components/Skills.vue'))
+const Projects = defineAsyncComponent(() => import('@/Components/Projects.vue'))
+const Contact = defineAsyncComponent(() => import('@/Components/Contact.vue'))
 </script>
 
 <style scoped>
