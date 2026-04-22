@@ -34,7 +34,7 @@ return [
     'about_lang_english' => 'English',
     'about_lang_reading' => 'Reading Comprehension',
     'about_lang_japanese' => 'Japanese',
-    'about_lang_jlpt' => 'JLPT N4',
+    'about_lang_jlpt' => 'JLPT N5',
 
     // Skills Section
     'skills_title' => 'Technical Skills',

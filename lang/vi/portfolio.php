@@ -34,7 +34,7 @@ return [
     'about_lang_english' => 'Tiếng Anh',
     'about_lang_reading' => 'Hiểu Biết Đọc',
     'about_lang_japanese' => 'Tiếng Nhật',
-    'about_lang_jlpt' => 'JLPT N4',
+    'about_lang_jlpt' => 'JLPT N5',
 
     // Skills Section
     'skills_title' => 'Kỹ Năng Kỹ Thuật',

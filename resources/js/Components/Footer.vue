@@ -5,7 +5,8 @@
         <!-- About Footer Section -->
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <div class="w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center">
+            <div
+              class="w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center">
               <span class="text-gray-900 font-bold">T</span>
             </div>
             <span class="text-lg font-bold text-gray-100">Truong Thanh Nam</span>
@@ -30,9 +31,11 @@
         <div>
           <h4 class="text-white font-semibold mb-4">Contact</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="mailto:namkim102@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors">namkim102@gmail.com</a></li>
+            <li><a href="mailto:namkim102@gmail.com"
+                class="text-gray-400 hover:text-blue-400 transition-colors">namkim102@gmail.com</a></li>
             <li><a href="tel:0969446782" class="text-gray-400 hover:text-blue-400 transition-colors">0969446782</a></li>
-            <li><a href="https://github.com/thanhnam23-dev" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors">GitHub</a></li>
+            <li><a href="https://github.com/thanhnam23-dev" target="_blank" rel="noopener noreferrer"
+                class="text-gray-400 hover:text-blue-400 transition-colors">GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -42,7 +45,7 @@
 
       <!-- Bottom Footer -->
       <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-        <p>&copy; 2024 Truong Thanh Nam. All rights reserved.</p>
+        <p>&copy; 2026 Truong Thanh Nam. All rights reserved.</p>
         <p class="mt-4 md:mt-0">
           Built with <span class="text-red-400">❤️</span> using Laravel, VueJS & TailwindCSS
         </p>

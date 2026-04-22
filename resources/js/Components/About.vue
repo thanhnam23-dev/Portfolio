@@ -40,10 +40,10 @@
                                 <div class="flex justify-between items-center">
                                     <span class="text-gray-300">{{ t('about_gpa') }}</span>
                                     <span
-                                        class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">8.28
+                                        class="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">8.3
                                         / 10</span>
                                 </div>
-                                <div class="text-sm text-gray-400 mt-1">(3.41 / 4.0)</div>
+                                <div class="text-sm text-gray-400 mt-1">(3.44 / 4.0)</div>
                             </div>
                         </div>
                     </div>
