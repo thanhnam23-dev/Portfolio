@@ -1,12 +1,12 @@
 <template>
-  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800/50 transition-colors duration-300">
     <div class="max-w-6xl mx-auto">
       <!-- Section Title -->
       <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+        <h2 class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent mb-4">
           {{ t('projects_title') }}
         </h2>
-        <p class="text-gray-400 text-lg">{{ t('projects_subtitle') }}</p>
+        <p class="text-gray-600 dark:text-gray-400 text-lg transition-colors">{{ t('projects_subtitle') }}</p>
       </div>
 
       <!-- Projects Grid -->
