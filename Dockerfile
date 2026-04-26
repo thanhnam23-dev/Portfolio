@@ -19,7 +19,6 @@ RUN touch database/database.sqlite
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
 RUN php artisan config:clear \
-    && php artisan cache:clear \
     && php artisan route:clear \
     && php artisan view:clear
 
