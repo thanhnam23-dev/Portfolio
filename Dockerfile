@@ -14,6 +14,9 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 WORKDIR /app
 COPY . .
 
+RUN touch database/database.sqlite
+
+
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
 RUN npm install
