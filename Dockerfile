@@ -14,6 +14,10 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 WORKDIR /app
 COPY . .
 
+ENV CACHE_DRIVER=file
+ENV SESSION_DRIVER=file
+ENV QUEUE_CONNECTION=sync
+
 RUN touch database/database.sqlite
 
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs

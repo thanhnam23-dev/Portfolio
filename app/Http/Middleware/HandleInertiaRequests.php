@@ -27,11 +27,16 @@ class HandleInertiaRequests extends Middleware
             'locale' => $locale,
             // Performance Optimization: Cache translations in production, load fresh in dev
             'translations' => function () use ($locale) {
-                if (app()->environment('production')) {
-                    return Cache::remember("translations_{$locale}", 3600, function () {
+                if (app()->environment('production') && config('cache.default') === 'file') {
+                    try {
+                        return Cache::remember("translations_{$locale}", 3600, function () {
+                            return __('portfolio');
+                        });
+                    } catch (\Throwable $e) {
                         return __('portfolio');
-                    });
+                    }
                 }
+
                 return __('portfolio');
             },
         ];
