@@ -24,13 +24,16 @@
                 </h1>
 
                 <!-- Subtitle -->
-                <p class="text-xl sm:text-2xl text-gray-700 dark:text-brand-text-secondary font-light transition-colors">
+                <p
+                    class="text-xl sm:text-2xl text-gray-700 dark:text-brand-text-secondary font-light transition-colors">
                     {{ t('hero_role') }}
-                    <span class="block text-gray-500 dark:text-brand-text-secondary/70 text-lg mt-2">{{ t('hero_subtitle') }}</span>
+                    <span class="block text-gray-500 dark:text-brand-text-secondary/70 text-lg mt-2">{{
+                        t('hero_subtitle') }}</span>
                 </p>
 
                 <!-- Description -->
-                <p class="text-gray-600 dark:text-brand-text-secondary text-lg max-w-2xl mx-auto leading-relaxed transition-colors">
+                <p
+                    class="text-gray-600 dark:text-brand-text-secondary text-lg max-w-2xl mx-auto leading-relaxed transition-colors">
                     {{ t('hero_description') }}
                 </p>
 
@@ -48,7 +51,8 @@
                 </div>
 
                 <!-- Quick Info -->
-                <div class="flex flex-wrap justify-center gap-6 text-gray-500 dark:text-brand-text-secondary/60 text-sm pt-12">
+                <div
+                    class="flex flex-wrap justify-center gap-6 text-gray-500 dark:text-brand-text-secondary/60 text-sm pt-12">
                     <div class="flex items-center gap-2">
                         <span class="text-brand-accent">📍</span>
                         <span>{{ t('hero_location') }}</span>
@@ -60,7 +64,8 @@
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="text-brand-accent">📱</span>
-                        <a href="tel:0969446782" class="hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">0969446782</a>
+                        <a href="tel:0969446782"
+                            class="hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">0969446782</a>
                     </div>
                 </div>
             </div>

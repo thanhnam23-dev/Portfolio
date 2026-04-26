@@ -1,15 +1,16 @@
 <template>
-  <footer class="bg-gray-50 dark:bg-brand-dark border-t border-gray-200 dark:border-brand-border py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+  <footer
+    class="bg-gray-50 dark:bg-brand-dark border-t border-gray-200 dark:border-brand-border py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <!-- About Footer Section -->
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <div
-              class="w-8 h-8 bg-brand-accent rounded-lg flex items-center justify-center">
+            <div class="w-8 h-8 bg-brand-accent rounded-lg flex items-center justify-center">
               <span class="text-white font-bold">T</span>
             </div>
-            <span class="text-lg font-bold text-gray-900 dark:text-brand-text-primary transition-colors">Truong Thanh Nam</span>
+            <span class="text-lg font-bold text-gray-900 dark:text-brand-text-primary transition-colors">Truong Thanh
+              Nam</span>
           </div>
           <p class="text-gray-600 dark:text-brand-text-secondary text-sm transition-colors">
             Fullstack Developer passionate about building robust web systems and scalable architectures.
@@ -20,10 +21,18 @@
         <div>
           <h4 class="text-gray-900 dark:text-brand-text-primary font-semibold mb-4 transition-colors">Quick Links</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="#about" class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">About</a></li>
-            <li><a href="#skills" class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">Skills</a></li>
-            <li><a href="#projects" class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">Projects</a></li>
-            <li><a href="#contact" class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">Contact</a></li>
+            <li><a href="#about"
+                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">About</a>
+            </li>
+            <li><a href="#skills"
+                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">Skills</a>
+            </li>
+            <li><a href="#projects"
+                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">Projects</a>
+            </li>
+            <li><a href="#contact"
+                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">Contact</a>
+            </li>
           </ul>
         </div>
 
@@ -32,10 +41,14 @@
           <h4 class="text-gray-900 dark:text-brand-text-primary font-semibold mb-4 transition-colors">Contact</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="mailto:namkim102@gmail.com"
-                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">namkim102@gmail.com</a></li>
-            <li><a href="tel:0969446782" class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">0969446782</a></li>
+                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">namkim102@gmail.com</a>
+            </li>
+            <li><a href="tel:0969446782"
+                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">0969446782</a>
+            </li>
             <li><a href="https://github.com/thanhnam23-dev" target="_blank" rel="noopener noreferrer"
-                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">GitHub</a></li>
+                class="text-gray-600 dark:text-brand-text-secondary hover:text-brand-accent dark:hover:text-brand-highlight transition-colors">GitHub</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -44,7 +57,8 @@
       <div class="border-t border-gray-200 dark:border-brand-border my-8 transition-colors"></div>
 
       <!-- Bottom Footer -->
-      <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-brand-text-secondary/60">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-brand-text-secondary/60">
         <p>&copy; 2026 Truong Thanh Nam. All rights reserved.</p>
         <p class="mt-4 md:mt-0">
           Built with <span class="text-red-400">❤️</span> using Laravel, VueJS & TailwindCSS

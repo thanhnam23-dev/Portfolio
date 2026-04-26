@@ -3,11 +3,11 @@
         <div class="max-w-6xl mx-auto">
             <!-- Section Title -->
             <div class="text-center mb-16">
-                <h2
-                    class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-brand-text-primary mb-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-brand-text-primary mb-4">
                     {{ t('skills_title') }}
                 </h2>
-                <p class="text-gray-600 dark:text-brand-text-secondary text-lg transition-colors">{{ t('skills_subtitle') }}</p>
+                <p class="text-gray-600 dark:text-brand-text-secondary text-lg transition-colors">{{
+                    t('skills_subtitle') }}</p>
             </div>
 
             <!-- Skills Grid -->
@@ -15,7 +15,8 @@
                 <!-- Backend Skills -->
                 <div
                     class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-8 hover:border-brand-accent/50 transition-all shadow-sm dark:shadow-none group">
-                    <h3 class="text-2xl font-bold text-brand-accent dark:text-brand-highlight mb-6 flex items-center gap-2">
+                    <h3
+                        class="text-2xl font-bold text-brand-accent dark:text-brand-highlight mb-6 flex items-center gap-2">
                         {{ t('skills_backend') }}
                     </h3>
                     <div class="space-y-4">
@@ -75,8 +76,10 @@
             <!-- Additional Skills -->
             <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Architecture Patterns -->
-                <div class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-6 shadow-sm dark:shadow-none">
-                    <h4 class="text-lg font-semibold text-brand-accent dark:text-brand-highlight mb-4 flex items-center gap-2">
+                <div
+                    class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-6 shadow-sm dark:shadow-none">
+                    <h4
+                        class="text-lg font-semibold text-brand-accent dark:text-brand-highlight mb-4 flex items-center gap-2">
                         {{ t('skills_architecture') }}
                     </h4>
                     <div class="flex flex-wrap gap-2">
@@ -88,7 +91,8 @@
                 </div>
 
                 <!-- Payment Integration -->
-                <div class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-6 shadow-sm dark:shadow-none">
+                <div
+                    class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-6 shadow-sm dark:shadow-none">
                     <h4 class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-4 flex items-center gap-2">
                         {{ t('skills_payment') }}
                     </h4>
