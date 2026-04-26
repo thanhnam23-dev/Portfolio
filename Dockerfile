@@ -22,9 +22,9 @@ RUN touch database/database.sqlite
 
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
-RUN php artisan config:clear \
-    && php artisan route:clear \
-    && php artisan view:clear
+RUN php artisan config:clear || true \
+    && php artisan route:clear || true \
+    && php artisan view:clear || true
 
 RUN npm install
 RUN npm run build
