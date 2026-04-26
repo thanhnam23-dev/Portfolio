@@ -4,18 +4,18 @@
             <!-- Section Title -->
             <div class="text-center mb-16">
                 <h2
-                    class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent mb-4">
+                    class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-brand-text-primary mb-4">
                     {{ t('skills_title') }}
                 </h2>
-                <p class="text-gray-600 dark:text-gray-400 text-lg transition-colors">{{ t('skills_subtitle') }}</p>
+                <p class="text-gray-600 dark:text-brand-text-secondary text-lg transition-colors">{{ t('skills_subtitle') }}</p>
             </div>
 
             <!-- Skills Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Backend Skills -->
                 <div
-                    class="bg-white dark:bg-gradient-to-br dark:from-gray-700/50 dark:to-gray-800/50 border border-gray-200 dark:border-gray-600/50 rounded-xl p-8 hover:border-blue-500/50 transition-all shadow-sm dark:shadow-none">
-                    <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-6 flex items-center gap-2">
+                    class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-8 hover:border-brand-accent/50 transition-all shadow-sm dark:shadow-none group">
+                    <h3 class="text-2xl font-bold text-brand-accent dark:text-brand-highlight mb-6 flex items-center gap-2">
                         {{ t('skills_backend') }}
                     </h3>
                     <div class="space-y-4">
@@ -29,7 +29,7 @@
 
                 <!-- Frontend Skills -->
                 <div
-                    class="bg-white dark:bg-gradient-to-br dark:from-gray-700/50 dark:to-gray-800/50 border border-gray-200 dark:border-gray-600/50 rounded-xl p-8 hover:border-cyan-500/50 transition-all shadow-sm dark:shadow-none">
+                    class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-8 hover:border-brand-highlight/50 transition-all shadow-sm dark:shadow-none group">
                     <h3 class="text-2xl font-bold text-cyan-600 dark:text-cyan-400 mb-6 flex items-center gap-2">
                         {{ t('skills_frontend') }}
                     </h3>
@@ -44,7 +44,7 @@
 
                 <!-- Database & Tools -->
                 <div
-                    class="bg-white dark:bg-gradient-to-br dark:from-gray-700/50 dark:to-gray-800/50 border border-gray-200 dark:border-gray-600/50 rounded-xl p-8 hover:border-purple-500/50 transition-all shadow-sm dark:shadow-none">
+                    class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-8 hover:border-purple-500/50 transition-all shadow-sm dark:shadow-none group">
                     <h3 class="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-6 flex items-center gap-2">
                         {{ t('skills_database') }}
                     </h3>
@@ -58,8 +58,8 @@
 
                 <!-- Programming Languages -->
                 <div
-                    class="bg-white dark:bg-gradient-to-br dark:from-gray-700/50 dark:to-gray-800/50 border border-gray-200 dark:border-gray-600/50 rounded-xl p-8 hover:border-green-500/50 transition-all shadow-sm dark:shadow-none">
-                    <h3 class="text-2xl font-bold text-green-600 dark:text-green-400 mb-6 flex items-center gap-2">
+                    class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-8 hover:border-emerald-500/50 transition-all shadow-sm dark:shadow-none group">
+                    <h3 class="text-2xl font-bold text-emerald-600 dark:text-emerald-400 mb-6 flex items-center gap-2">
                         {{ t('skills_languages') }}
                     </h3>
                     <div class="space-y-4">
@@ -75,20 +75,20 @@
             <!-- Additional Skills -->
             <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Architecture Patterns -->
-                <div class="bg-white dark:bg-gradient-to-br dark:from-gray-700/50 dark:to-gray-800/50 border border-gray-200 dark:border-gray-600/50 rounded-xl p-6 shadow-sm dark:shadow-none">
-                    <h4 class="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-2">
+                <div class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-6 shadow-sm dark:shadow-none">
+                    <h4 class="text-lg font-semibold text-brand-accent dark:text-brand-highlight mb-4 flex items-center gap-2">
                         {{ t('skills_architecture') }}
                     </h4>
                     <div class="flex flex-wrap gap-2">
                         <span v-for="arch in architectures" :key="arch"
-                            class="px-3 py-1 bg-blue-100 dark:bg-blue-500/20 text-blue-600 dark:text-blue-300 rounded-full text-sm border border-blue-200 dark:border-blue-500/30 transition-colors">
+                            class="px-3 py-1 bg-brand-accent/10 dark:bg-brand-accent/20 text-brand-accent dark:text-brand-highlight rounded-full text-sm border border-brand-accent/20 dark:border-brand-accent/30 transition-colors">
                             {{ t(arch) }}
                         </span>
                     </div>
                 </div>
 
                 <!-- Payment Integration -->
-                <div class="bg-white dark:bg-gradient-to-br dark:from-gray-700/50 dark:to-gray-800/50 border border-gray-200 dark:border-gray-600/50 rounded-xl p-6 shadow-sm dark:shadow-none">
+                <div class="bg-white dark:bg-brand-surface border border-gray-200 dark:border-brand-border rounded-xl p-6 shadow-sm dark:shadow-none">
                     <h4 class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-4 flex items-center gap-2">
                         {{ t('skills_payment') }}
                     </h4>
