@@ -12,6 +12,10 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs
 
 WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
 COPY . .
 
 ENV CACHE_DRIVER=file
@@ -26,7 +30,6 @@ RUN php artisan config:clear || true \
     && php artisan route:clear || true \
     && php artisan view:clear || true
 
-RUN npm install
 RUN npm run build
 
 RUN chmod -R 777 storage bootstrap/cache
