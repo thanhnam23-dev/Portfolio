@@ -6,6 +6,8 @@
 .phpactor.json
 .phpunit.result.cache
 .idea.md
+CLAUDE.md
+.gemini
 /.cursor/
 /.idea
 /.nova
